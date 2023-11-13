@@ -4,8 +4,8 @@ public class Department {
 
     private int departmentId;
     private String departmentName;
-    private int managerId;
-    private int locationId;
+    private Employee manager;
+    private Location location;
 
     /**
      * @return the departmentId
@@ -38,28 +38,34 @@ public class Department {
     /**
      * @return the managerId
      */
-    public int getManagerId() {
-        return managerId;
+
+
+    /**
+     * @param manager the managerId to set
+     */
+
+
+    /**
+     * @return the location
+     */
+    public Location getLocation() {
+        return location;
     }
 
     /**
-     * @param managerId the managerId to set
+     * @param location the locationId to set
      */
-    public void setManagerId(int managerId) {
-        this.managerId = managerId;
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
-    /**
-     * @return the locationId
-     */
-    public int getLocationId() {
-        return locationId;
+
+    // ahora con los nuevos
+    public Employee getManager() {
+        return manager;
     }
 
-    /**
-     * @param locationId the locationId to set
-     */
-    public void setLocationId(int locationId) {
-        this.locationId = locationId;
+    public void setManager(Employee manager) {
+        this.manager = manager;
     }
 }
