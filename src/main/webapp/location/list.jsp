@@ -38,25 +38,25 @@
         <tr>
             <td><%=loc.getLocationId()%>
             </td>
-            <td><%=loc.getStreetAddress()%>
+            <td><%=loc.getLocationId()%>
             </td>
-            <td><%=loc.getPostalCode()== null ? "Sin Codigo Postal" :loc.getPostalCode()%>
+            <td><%=loc.getLocationId()%>
             </td>
-            <td><%=loc.getCity()%>
+            <td><%=loc.getLocationId()%>
             </td>
-            <td><%= loc.getStateProvince() == null ? "Sin Provincia" :loc.getStateProvince()%>
+            <td><%=loc.getLocationId()%>
             </td>
-            <td><%= loc.getCountry()== null ? "Sin Pais" :loc.getCountry().getCountryName()%>
+            <td><%=loc.getLocationId()%>
             </td>
             <td>
                 <a class="btn btn-primary"
-                   href="<%=request.getContextPath()%>/LocationServlet?action=editar&id=<%=loc.getLocationId()%>">
+                   href="<%=request.getContextPath()%>/DepartmentServlet?action=editar&id=<%=loc.getLocationId()%>">
                     <i class="bi bi-pencil-square"></i>
                 </a>
             </td>
             <td>
                 <a class="btn btn-danger"
-                   href="<%=request.getContextPath()%>/LocationServlet?action=borrar&id=<%=loc.getLocationId()%>">
+                   href="<%=request.getContextPath()%>/DepartmentServlet?action=borrar&id=<%=loc.getLocationId()%>">
                     <i class="bi bi-trash3"></i>
                 </a>
             </td>
